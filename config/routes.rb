@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-  get "/api.json" => "apis#index"
+  get "/api" => "apis#index"
 
   patch "/api/:id" => "apis#update"
 
