@@ -1,2 +1,11 @@
-### API Index 
+### API Index Action
 GET http://localhost:3000/api.json
+
+### API Update Action
+PATCH http://localhost:3000/api/1.json
+Content-Type: application/json
+
+{
+  "forks": 20
+}
+

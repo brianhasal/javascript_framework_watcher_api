@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 
   get "/api.json" => "apis#index"
 
+  patch "/api/:id" => "apis#update"
+
 end
