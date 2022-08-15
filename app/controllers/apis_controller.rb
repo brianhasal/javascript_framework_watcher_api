@@ -1,5 +1,14 @@
 class ApisController < ApplicationController
 
+  url_hash = {
+    "Vue" => "http:...",
+    "Angular.js" => "http:...",
+    "Ember.js" => "http:...",
+    "Svelte" => "http:...",
+    "React" => "http:...",
+
+  }
+
   def index
     apis = Api.all.order(:id)
     render json: apis.as_json    
