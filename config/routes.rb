@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   post "/users" => "users#create"
+  post "/sessions" => "sessions#create"
+
+  get "/auth/github/callback" => "github#authorize"
+  get "/github_profile" => "github#profile"
 
   get "/api" => "apis#index"
 
