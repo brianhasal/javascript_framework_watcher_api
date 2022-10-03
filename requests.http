@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjA2NTIwMDF9.ZdA2W-i9vDoHww6DqD_Q0uPSy9ZSD6Rr5kkhglmc3Zg
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjQ4ODg1NTh9.bXmRlIDa30_5e1AcVZvtb_qy-EH3OXaow7R62sQWgBM
 
 ### Users create (signup)
 POST http://localhost:3000/users.json
@@ -42,4 +42,13 @@ Content-Type: application/json
 {
   "forks": 20
 }
+
+### React Getter
+GET http://localhost:3000/react.json
+Authorization: Bearer 
+
+
+### Root Github API
+GET http://localhost:3000/github.json
+
 

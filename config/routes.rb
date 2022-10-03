@@ -14,4 +14,9 @@ Rails.application.routes.draw do
 
   patch "/api/:id" => "apis#update"
 
+
+  get "/react" => "github#reactCheck"
+
+  get "/github" => "github#basicGithub"
+
 end

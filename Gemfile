@@ -48,3 +48,5 @@ group :development do
 end
 
 gem 'http'
+
+gem "octokit", "~> 5.0"

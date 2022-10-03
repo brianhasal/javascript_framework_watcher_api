@@ -12,4 +12,19 @@ class GithubController < ApplicationController
       .get("https://api.github.com/user")
     render json: JSON.parse(response.body)
   end
+
+  def reactCheck
+    response = HTTP.get('https://api.github.com/user/repos')
+    render json: JSON.parse(response.body)
+  end
+
+  def basicGithub
+    response = HTTP
+      .get("https://api.github.com")
+    render json: JSON.parse(response.body)
+  end
+
+
+
+
 end
